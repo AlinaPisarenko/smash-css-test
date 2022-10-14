@@ -5,7 +5,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden; 
     color:#ffffff;
   
 }
@@ -15,22 +14,55 @@ body {
     min-height: 100vh;
 }
 
+.header-img-container {  
+    overflow-x: hidden; 
+}
+
 .header-img {
-    width: 100vw; 
-    height: 80vh;
-    object-fit: cover;
+    position: absolute;
+    width: 8000px; 
+    height: 75vh;
+    background: url("./smash\ assets/header-bg.png") repeat-x;
+    animation: slide 140s linear infinite;
+    z-index: 1;
 }
 
 .header-menu {
+    position: absolute;
+    top:56%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -13rem;  
+    z-index: 10;
 }
 
+/* .header-info > div:nth-child(2) {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .date {
+color:#000000;
+font-weight: 700;
+font-size: 3rem;
+  }
+
+  .buy-btn {
+    width: 7rem;
+    padding: 30px 10px;
+    border:none;
+    background-color: #000000;
+    color:#ffffff;
+
+  } */
+  
 .header-title {
-width: 40rem;
+width: 38rem;
 }
 
 .header-buttons { 
@@ -38,10 +70,10 @@ display: flex;
 }
 
 .menu-btn {
-    padding: 12px 0;
+    padding: 16px 0;
     background-color: black;
     margin: 0 4px;
-    width: 7rem;
+    width: 7.5rem;
     height: 7rem;
     text-align: center;
     transition: all 0.2s ease-in-out;
@@ -54,20 +86,13 @@ display: flex;
 }
 
 .menu-btn-logo {
-width: 60%;
+    width: 40%;
 }
 
 .menu-btn-text {
     font-size: 12px;
 }
 
-.characters {
-
-}
-
-.characters-list {
-
-}
 
 .characters-display {
 display: flex;
@@ -83,7 +108,8 @@ align-items: center;
 background-color: #000000;
 height: 7rem;
 width: 40rem;
-margin: 1px;
+/* margin: 1px; */
+border: 1px solid rgba(114, 114, 114, 0.5);
 overflow: hidden;
 transition: all 0.2s ease-in-out;
 }
@@ -148,3 +174,16 @@ font-size: 2.5rem;
     transform: scale(1.1);
     opacity: 1;
 }
+
+
+
+/* optional */
+
+@keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-4000px); /* The image width */
+    }
+  }

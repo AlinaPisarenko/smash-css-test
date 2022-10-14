@@ -1,13 +1,16 @@
 let charactersList = document.querySelector('.characters-list')
 let charactersDisplay = document.querySelector('.characters-display')
+let info = document.querySelector('.header-info')
+// let date = document.querySelector('.date')
 
 let fighters = ['mario', 'link', 'samus', 'yoshi', 'kirby', 'fox', 'pikachu', 'luigi', 'ness', 'jigglypuff', 'peach', 'daisy', 'bowser','sheik', 'zelda',  'falco', 'marth', 'mewtwo', 'roy', 'sonic', 'robin', 'joker', 'kazuya', 'inkling']
 
 
+// let newDate =  new Date().toLocaleDateString()
+// date.append(newDate)
 
 
 let fighter = fighters.map((element, index) => {
-
 
         let image = document.createElement('img')
         let number = document.createElement('h2')
@@ -25,7 +28,6 @@ let fighter = fighters.map((element, index) => {
         card.append(number,name,image)
     
         charactersDisplay.append(card) 
- 
 
 })
 
