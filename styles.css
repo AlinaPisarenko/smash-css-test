@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden; 
+    color:#ffffff;
+  
+}
+
+.header {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.header-img {
+    width: 100vw; 
+    height: 80vh;
+    object-fit: cover;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -13rem;  
+}
+
+.header-title {
+width: 40rem;
+}
+
+.header-buttons { 
+display: flex;
+}
+
+.menu-btn {
+    padding: 12px 0;
+    background-color: black;
+    margin: 0 4px;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #d10614; 
+}
+
+.menu-btn-logo {
+width: 60%;
+}
+
+.menu-btn-text {
+    font-size: 12px;
+}
+
+.characters {
+
+}
+
+.characters-list {
+
+}
+
+.characters-display {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 8rem 0;
+}
+
+.fighter-card {
+display: flex;
+justify-content: space-between;
+align-items: center; 
+background-color: #000000;
+height: 7rem;
+width: 40rem;
+margin: 1px;
+overflow: hidden;
+transition: all 0.2s ease-in-out;
+}
+
+.fighter-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #d10614;
+}
+
+.fighter-card:hover img{
+    transform: scale(1.2);  
+}
+
+.fighter-image {  
+height: 100%;
+transition: all 0.2s ease-in-out;
+}
+
+.fighter-name {  
+margin-left: 1rem;
+font-size: 2.5rem;
+}
+
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    background-color: #000;
+   
+}
+
+.footer-title {
+    width: 26rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 5rem;
+}
+
+.footer-links  {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-links div {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgb(255,255,255);
+    opacity: 0.5;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
