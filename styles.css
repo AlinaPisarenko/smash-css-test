@@ -16,9 +16,9 @@ body {
     min-height: 95vh;
 }
 
-/* #header-img-container {  
+#header-img-container {  
     overflow-x: hidden; 
-} */
+}
 
 #header-img {
     position: absolute;
